@@ -5,23 +5,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All about me</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="http://example.com/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="icon" href="./images/logo.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
 </head>
 
 <body>
-    <h1>ddd</h1>
-    <a href="https://shavla.github.io/Portfolio/">ss</a>
-    <a href="https://shavla.github.io/Start-Bootstrap/">ss</a>
-    <a href="https://shavla.github.io/Simple-Bootstrap/">ss</a>
+    <div class="content flex">
 
-    <a href="https://shavla.github.io/Frontend-Mentor-Examples/Chat%20app%20CSS%20illustration/">ss</a>
+        <div class="navigation flex f-d-column j-c-space-between">
+            <img src="./images/logo.png">
 
-    <a href="https://shavla.github.io/Frontend-Mentor-Examples/Fylo%20dark%20theme%20landing%20page%20master/">ss</a>
+            <div class="nav-content flex f-d-column">
+                <button class="home-but" onclick="funcHome()">
+                    <span class="replies"><i class="fa fa-home"></i></span>
+                    <span class="comment">HOME</span>
+                </button>
+                <button class="about-but" onclick="funcAbout()">
+                    <span class="replies"><i class="fa fa-user-circle"></i></span>
+                    <span class="comment">ABOUT</span>
+                </button>
+                <button class="work-but" onclick="funcWork()">
+                    <span class="replies"><i class="fa fa-eye"></i></span>
+                    <span class="comment">MY WORK</span>
+                </button>
+                <button class="contact-but" onclick="funcContact()">
+                    <span class="replies"><i class="fa fa-envelope"></i></span>
+                    <span class="comment">CONTACT</span>
+                </button>
+            </div>
 
+            <div class="nav-social flex f-d-column">
+                <a href="https://github.com/shavla" target="_blank"><i class="fa fa-github"></i></a>
+                <a href="https://www.facebook.com/shako.raqviashvili/" target="_blank"><i
+                        class="fa fa-facebook-f"></i></a>
+            </div>
+        </div>
 
-    <a href="https://shavla.github.io/Frontend-Mentor-Examples/Huddle%20landing%20page%20with%20alternating%20feature%20blocks%20master/">ss</a>
-    <a href="https://shavla.github.io/Frontend-Mentor-Examples/Intro%20component%20with%20sign-up%20form/">ss</a>
-    <a href="https://shavla.github.io/Frontend-Mentor-Examples/Room%20homepage/">ss</a>
-    <a href="https://shavla.github.io/Frontend-Mentor-Examples/Social%20media%20dashboard%20with%20theme%20switcher/">ss</a>
+        <div class="home">
+            <h1>home</h1>
+        </div>
+
+        <div class="about">
+            <h1>about</h1>
+        </div>
+
+        <div class="work">
+            <h1>ddd</h1>
+            <a href="https://shavla.github.io/Portfolio/" target="_blank">ss</a>
+            <a href="https://shavla.github.io/Start-Bootstrap/" target="_blank">ss</a>
+            <a href="https://shavla.github.io/Simple-Bootstrap/" target="_blank">ss</a>
+            <a href="https://shavla.github.io/Frontend-Mentor-Examples/Chat%20app%20CSS%20illustration/"
+                target="_blank">ss</a>
+            <a href="https://shavla.github.io/Frontend-Mentor-Examples/Fylo%20dark%20theme%20landing%20page%20master/"
+                target="_blank">ss</a>
+            <a href="https://shavla.github.io/Frontend-Mentor-Examples/Huddle%20landing%20page%20with%20alternating%20feature%20blocks%20master/"
+                target="_blank">ss</a>
+            <a href="https://shavla.github.io/Frontend-Mentor-Examples/Intro%20component%20with%20sign-up%20form/"
+                target="_blank">ss</a>
+            <a href="https://shavla.github.io/Frontend-Mentor-Examples/Room%20homepage/" target="_blank">ss</a>
+            <a href="https://shavla.github.io/Frontend-Mentor-Examples/Social%20media%20dashboard%20with%20theme%20switcher/"
+                target="_blank">ss</a>
+        </div>
+
+        <div class="contact">
+            <h1>contact</h1>
+        </div>
+    </div>
 
 </body>
 
