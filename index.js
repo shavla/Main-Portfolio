@@ -1,5 +1,5 @@
 function funcHome() {
-  $(".home").css("display", "inline");
+  $(".home").css("display", "flex");
   $(".about").css("display", "none");
   $(".work").css("display", "none");
   $(".contact").css("display", "none");
@@ -23,3 +23,7 @@ function funcContact() {
   $(".work").css("display", "none");
   $(".contact").css("display", "inline");
 }
+
+$(document).ready(() => { 
+	$('.selected-element').addClass('animate'); 
+});

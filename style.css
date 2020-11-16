@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
 }
 .flex {
   display: flex;
@@ -15,6 +16,7 @@
 .content {
   width: 100%;
   height: 100vh;
+  background-color: #1d1d1d;
 }
 .navigation {
   width: 60px;
@@ -23,6 +25,7 @@
 }
 .navigation img {
   width: 60px;
+  cursor: pointer;
 }
 
 .nav-content button {
@@ -61,4 +64,180 @@ button:hover .comment {
 .work,
 .contact {
   display: none;
+}
+.img-body {
+  width: 60px;
+  margin: 60px;
+}
+.img-body-html {
+  width: 96px;
+  margin: 40px;
+}
+.img-h {
+  width: 40px;
+  margin-left: 85px;
+}
+.home button {
+  width: 190px;
+  height: 44px;
+  margin-left: 100px;
+  margin-bottom: 70px;
+  font-size: 18px;
+  background: none;
+  border: 1px solid #08fdd8;
+  color: #08fdd8;
+  outline: none;
+  cursor: pointer;
+  letter-spacing: 4px;
+}
+.home button:hover {
+  background: #08fdd8;
+  color: #1d1d1d;
+}
+.selected-element {
+  margin-left: 100px;
+  font-size: 23px;
+  opacity: 0;
+  transform: rotate(180deg);
+  transition: 500ms;
+  transform: scale(3, 2);
+}
+.selected-element.animate {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+.selected-element img {
+  width: 37px;
+}
+.selected-element h1 {
+  display: inline-block;
+  letter-spacing: -5px;
+  color: #fff;
+}
+.selected-element h1:hover {
+  animation: one 1s;
+  color: #08fdd8;
+  cursor: pointer;
+}
+@keyframes one {
+  25% {
+    transform: scale(1.2, 0.8);
+  }
+  28% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(1.2);
+  }
+  90% {
+    transform: scale(0.8);
+  }
+  95% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+.home h3 {
+  margin-left: 100px;
+  margin-bottom: 28px;
+  color: #5c5c5c;
+}
+
+.spinner-one {
+  position: absolute;
+  right: 35%;
+  top: 15%;
+}
+.spinner-two {
+  position: absolute;
+  right: 35%;
+  top: 45%;
+}
+.spinner-three {
+  position: absolute;
+  right: 35%;
+  top: 75%;
+}
+.ball {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+}
+.ball::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #08fdd8;
+  border-radius: 50%;
+  position: absolute;
+}
+.ball-1::before {
+  transform: translateX(-150%);
+  animation: 1s ease-out 0s infinite left;
+}
+.ball-2::before {
+  transform: translateX(-50%);
+}
+.ball-3::before {
+  transform: translateX(50%);
+}
+.ball-4::before {
+  transform: translateX(150%);
+  animation: 1s ease-out 0s infinite right;
+}
+
+@keyframes left {
+  25% {
+    transform: translateX(-250%);
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: translateX(-150%);
+  }
+}
+
+@keyframes right {
+  50% {
+    transform: translateX(150%);
+  }
+  75% {
+    transform: translateX(250%);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateX(150%);
+  }
+}
+
+.ball-two::before {
+  background: rgba(8, 253, 216, 0.5);
+  left: -100%;
+  animation: position 2s infinite cubic-bezier(0.25, 0, 0.75, 1),
+    size 2s infinite cubic-bezier(0.25, 0, 0.75, 1);
+}
+.ball-2-1::before {
+  animation-delay: 0s, -0.5s;
+}
+.ball-2-2::before {
+  animation-delay: -0.5s, -1s;
+}
+.ball-2-3::before {
+  animation-delay: -1s, -1.5s;
+}
+.ball-2-4::before {
+  animation-delay: -1.5s, -2s;
+}
+
+@keyframes position {
+  50% {
+    left: 100%;
+  }
+}
+
+@keyframes size {
+  50% {
+    transform: scale(0.5, 0.5);
+  }
 }
