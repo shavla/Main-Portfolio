@@ -262,12 +262,12 @@ button:hover .comment {
   opacity: 1;
   transform: rotate(0deg);
 }
-.about .selected-element h1 {
+.about h1 {
   display: inline-block;
   letter-spacing: -5px;
   color: #08fdd8;
 }
-.about .selected-element h1:hover {
+.about h1:hover {
   animation: jumping 1s;
   cursor: pointer;
 }
@@ -401,7 +401,7 @@ button:hover .comment {
 .contact {
   width: 50%;
 }
-.contact .selected-element h1 {
+.contact h1 {
   display: inline-block;
   letter-spacing: -5px;
   color: #08fdd8;
