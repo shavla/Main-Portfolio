@@ -6,7 +6,7 @@ function funcHome() {
 }
 function funcAbout() {
   $(".home").css("display", "none");
-  $(".about").css("display", "inline");
+  $(".about").css("display", "flex");
   $(".work").css("display", "none");
   $(".contact").css("display", "none");
 }
@@ -14,14 +14,14 @@ function funcAbout() {
 function funcWork() {
   $(".home").css("display", "none");
   $(".about").css("display", "none");
-  $(".work").css("display", "inline");
+  $(".work").css("display", "flex");
   $(".contact").css("display", "none");
 }
 function funcContact() {
   $(".home").css("display", "none");
   $(".about").css("display", "none");
   $(".work").css("display", "none");
-  $(".contact").css("display", "inline");
+  $(".contact").css("display", "flex");
 }
 
 $(document).ready(() => { 
