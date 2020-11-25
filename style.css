@@ -10,6 +10,9 @@
 .f-d-column {
   flex-direction: column;
 }
+.f-w-wrap {
+  flex-wrap: wrap;
+}
 .j-c-space-between {
   justify-content: space-between;
 }
@@ -397,6 +400,42 @@ button:hover .comment {
 }
 /* End About */
 
+/* Work */
+.work {
+  width: 100%;
+}
+.item {
+  overflow: hidden;
+  margin: 15px 10px;
+  width: 30%;
+  height: 30vh;
+  position: relative;
+}
+.item img {
+  width: 100%;
+}
+.item p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.item:hover iframe {
+  opacity: 0.5;
+}
+.item:hover p {
+  opacity: 1;
+  background:#08fdd8;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  padding-top: 37px;
+  padding-left: 3px;
+}
+
+/* End Work */
+
 /* Contact */
 .contact {
   width: 50%;
@@ -448,3 +487,4 @@ button:hover .comment {
   width: 100%;
   height: 100vh;
 }
+/* End Contact */
