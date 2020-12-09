@@ -3,12 +3,14 @@ function funcHome() {
   $(".about").css("display", "none");
   $(".work").css("display", "none");
   $(".contact").css("display", "none");
+  $(".games").css("display", "none");
 }
 function funcAbout() {
   $(".home").css("display", "none");
   $(".about").css("display", "flex");
   $(".work").css("display", "none");
   $(".contact").css("display", "none");
+  $(".games").css("display", "none");
 }
 
 function funcWork() {
@@ -16,12 +18,21 @@ function funcWork() {
   $(".about").css("display", "none");
   $(".work").css("display", "flex");
   $(".contact").css("display", "none");
+  $(".games").css("display", "none");
 }
 function funcContact() {
   $(".home").css("display", "none");
   $(".about").css("display", "none");
   $(".work").css("display", "none");
   $(".contact").css("display", "flex");
+  $(".games").css("display", "none");
+}
+function funcGames() {
+  $(".home").css("display", "none");
+  $(".about").css("display", "none");
+  $(".work").css("display", "none");
+  $(".contact").css("display", "none");
+  $(".games").css("display", "flex");
 }
 
 $(document).ready(() => { 
