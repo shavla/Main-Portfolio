@@ -85,7 +85,8 @@ button:hover .comment {
 /* End Navigation */
 .about,
 .work,
-.contact {
+.contact,
+.games {
   display: none;
 }
 /* Home */
@@ -445,7 +446,6 @@ button:hover .comment {
 /* GAMES */
 .games {
   width: 100%;
-  display: none;
 }
 .game {
   overflow: hidden;
