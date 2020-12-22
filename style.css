@@ -447,6 +447,9 @@ button:hover .comment {
 .games {
   width: 100%;
 }
+.games h1 {
+  color: #08fdd8;
+}
 .game {
   overflow: hidden;
   margin-left: 100px;
